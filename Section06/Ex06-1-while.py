@@ -17,6 +17,11 @@ while n != 0:
             # 출력은 n이 1까지만 되지만 메모리 자체에는 n=0 임
 print(f'while문 끝나고 n의 값: {n}')
 
+n = 10
+while n != 0:
+    n -= 1
+    print(n)
+
 
 
 
