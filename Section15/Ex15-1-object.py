@@ -17,4 +17,40 @@
     초기화용 메소드 - 생성자
     속성 - 변수
     기능 - 메소드(method)    # 클래스에 종속되어 있는 함수는 메소드라고 함
+
+가비지 컬렉터(Garbage collector)
+    메모리 관리를 자동으로 처리하여 사용하지 않는 객체를 식별하고 제거
 '''
+
+class Computer:
+
+    def set_spec(self, cpu, ram, vga, ssd):
+        self.cpu = cpu
+        self.ram = ram
+        self.vga = vga
+        self.ssd = ssd
+
+    def hardware_info(self):
+        print(f'CPU = {self.cpu}')
+        print(f'RAM = {self.ram}')
+        print(f'VGA = {self.vga}')
+        print(f'SSD = {self.ssd}')
+
+desktop = Computer()    # Computer 객체 생성
+desktop.set_spec('i7','32G', 'GTX3060', '512GB')
+desktop.hardware_info()
+
+print(desktop.cpu)
+print(desktop.ram)
+print(desktop.vga)
+print(desktop.ssd)
+
+macbook = Computer()    # Computer 객체 생성
+desktop.set_spec('M2','16G', 'M2', '512GB')
+desktop.hardware_info()
+
+
+
+
+
+
