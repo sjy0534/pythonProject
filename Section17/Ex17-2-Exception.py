@@ -8,3 +8,4 @@ try:
 except Exception as e:
     print(f'발생 예외 메시지 {e}')
     traceback.print_exc()
+
