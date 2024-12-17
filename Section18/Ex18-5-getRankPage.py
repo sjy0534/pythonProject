@@ -16,3 +16,4 @@ artist_list = soup.find_all('p', class_='artist')
 for idx, title in enumerate(music_list):
     artist = artist_list[idx].find_all("a")[0]
     print(f'{idx+1} {title.text.strip()}-{artist.text.strip()}')
+
