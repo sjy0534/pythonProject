@@ -8,7 +8,7 @@
 class Graph:
     def __init__(self, vertices):
         self.vertices = vertices
-        self.adj_list = {}
+        self.adj_list = {}  # 딕셔너리
         for vertex in vertices:
             self.adj_list[vertex] = []
 
